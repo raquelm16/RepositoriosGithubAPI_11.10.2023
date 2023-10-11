@@ -6,14 +6,14 @@ import { enableExpoCliLogging } from 'expo/build/logs/Logs';
 
 const App = ({navigation}) => {
   const [lista, setLista] = useState([]);
-  const [carregar, setCarregar] = useState(true)
+ // const [carregar, setCarregar] = useState(true)
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get('https://api.github.com/users/raquelm16/repos');
         setLista(response.data);
-        setCarregar(false);
+       // setCarregar(false);
       }
       catch (error) {
         console.error(
@@ -25,13 +25,13 @@ const App = ({navigation}) => {
     fetchData();
   }, []);
 
-  if (carregar){
-    return(
-      <View>
-        <ActivityIndicator size='large'/>
-      </View>
-    );
-  }
+  //if (carregar){
+  //  return(
+  //    <View>
+  //      <ActivityIndicator size='large'/>
+  //    </View>
+  //  );
+  //}
 
   return (
     <View style={styles.container}>
