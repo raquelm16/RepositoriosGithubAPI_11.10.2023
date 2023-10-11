@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "repositorios_github_api",
+    "slug": "repositorios_github_api",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "repositorios_github_api"
+}
